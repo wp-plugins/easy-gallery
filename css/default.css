@@ -1,0 +1,120 @@
+/*
+Easy Gallery
+Copyright 2012 Michele Menciassi
+*/
+.easygallery-container {
+	position: relative;
+	width: 100%;
+	margin: 10px auto;
+	text-align: center;
+	height: 330px;
+	overflow: hidden;
+}
+
+.easygallery-slides {
+	margin: 0 auto;
+}
+
+.easygallery-slides img {
+	max-width: 100%;
+}
+
+#prev-slide {
+	display: block;
+	width: 45px;
+	height: 115px;
+	background: url(../images/arrows.png) -3px 0 no-repeat;
+	position: absolute;
+	top: 130px;
+	z-index: 99999;
+	left: 20px;
+	font-size: 0;
+	text-indent: -9999px;
+}
+
+
+#prev-slide:hover {
+	background: url(../images/arrows.png) -50px 0 no-repeat;
+}
+
+#next-slide {
+	display: block;
+	width: 45px;
+	height: 115px;
+	background: url(../images/arrows.png) -145px 0 no-repeat;
+	position: absolute;
+	top: 130px;
+	z-index: 99999;
+	right: 20px;
+	font-size: 0;
+	text-indent: -9999px;
+}
+
+#next-slide:hover {
+	background: url(../images/arrows.png) -98px 0 no-repeat;	
+}
+
+#photogallery-nav {
+	position: relative;
+	margin: 0 auto;
+	background: #252221;
+	height: 120px;
+	width:512px;
+}
+
+.slide {
+	width: 512px;
+	margin: 0 auto;
+}
+
+.slide a {
+	display: inline-block;
+	width: 120px;
+	height: 120px;
+	margin: 0 4px;
+	padding: 0;
+	border: 0;
+	opacity: 0.5;
+}
+
+.slide a.active, .slide a:hover {
+	opacity: 1;
+}
+
+#photogallery-nav-container {
+	position: relative;
+	margin-top: 10px;
+	background: #252221;
+	border-radius: 16px;
+	padding: 10px 0;
+}
+
+#prev-gallery, #next-gallery {
+	position: absolute;
+	top: 32px;
+	width: 20px;
+	height: 75px;
+	display: none;
+	z-index: 9999;
+	font-size: 0;
+	text-indent: -9999px;
+}
+
+#prev-gallery {
+	left: 10px;
+	background: url(../images/arrows-nav.png) 0px 0 no-repeat;
+}
+
+#next-gallery {
+	right: 10px;
+	background: url(../images/arrows-nav.png) -20px 0 no-repeat;
+}
+
+#photogallery-nav img {
+	width: 120px !important;
+	height: 120px !important;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	max-width: 100%;
+}
